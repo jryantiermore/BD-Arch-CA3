@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, bdarch ]
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run smoke test
+      run: python -c "import cv2; print('OpenCV OK')"
+
+    - name: Build Docker image
+      run: docker build -t mlops-pipeline .
