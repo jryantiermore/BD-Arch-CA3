@@ -1,0 +1,21 @@
+
+=== Comparison for man1.jpg at 2026-05-16 09:52:45 ===
+
+
+=== Comparison for man1.jpg at 2026-05-16 09:54:07 ===
+
+BLUE -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.1011s
+GREEN -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.1187s
+Latency difference: -0.0176s
+
+=== Comparison for potatoe.jpg at 2026-05-16 09:54:08 ===
+
+BLUE -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.0952s
+GREEN -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.0794s
+Latency difference: 0.0158s
+
+=== Comparison for woman2.jpg at 2026-05-16 09:54:08 ===
+
+BLUE -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0960s
+GREEN -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0743s
+Latency difference: 0.0217s
