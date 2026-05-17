@@ -19,3 +19,39 @@ Latency difference: 0.0158s
 BLUE -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0960s
 GREEN -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0743s
 Latency difference: 0.0217s
+
+=== Comparison for man1.jpg at 2026-05-17 19:04:35 ===
+
+BLUE -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.0630s
+GREEN -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.0871s
+Latency difference: -0.0241s
+
+=== Comparison for potatoe.jpg at 2026-05-17 19:04:35 ===
+
+BLUE -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.1176s
+GREEN -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.0728s
+Latency difference: 0.0448s
+
+=== Comparison for woman2.jpg at 2026-05-17 19:04:35 ===
+
+BLUE -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.1210s
+GREEN -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0730s
+Latency difference: 0.0480s
+
+=== Comparison for man1.jpg at 2026-05-17 19:05:48 ===
+
+BLUE -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.0630s
+GREEN -> {'confidence': 0.8292411538002592, 'prediction': 'face'} | latency: 0.1114s
+Latency difference: -0.0484s
+
+=== Comparison for potatoe.jpg at 2026-05-17 19:05:49 ===
+
+BLUE -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.0851s
+GREEN -> {'confidence': 0.6463797661024604, 'prediction': 'no_face'} | latency: 0.1102s
+Latency difference: -0.0251s
+
+=== Comparison for woman2.jpg at 2026-05-17 19:05:49 ===
+
+BLUE -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0807s
+GREEN -> {'confidence': 0.7974789890061597, 'prediction': 'face'} | latency: 0.0782s
+Latency difference: 0.0025s

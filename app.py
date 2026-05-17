@@ -63,6 +63,5 @@ def predict():
     return jsonify(result), 200
 
 
-# 🔥 THIS WAS MISSING — REQUIRED FOR python3 app.py TO WORK
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
