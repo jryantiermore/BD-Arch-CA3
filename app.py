@@ -4,7 +4,7 @@ import uuid # ensures unique names for uploaded files
 from PIL import Image
 from inference.face_inference import FaceClassifier # import my model to determine face or no face
 from flask import Flask, request, jsonify
-from ingestion.upload_handler import handle_pload   # import my upload routine
+from ingestion.upload_handler import handle_upload   # import my upload routine
 
 app = Flask(__name__) # create an instance of my flask app
 
