@@ -1,7 +1,8 @@
 # updated ver of the Dockerfile after finishing build out of most of pipeline
-FROM python:3.9-slim  # base image for container
+# revised version removing comments whichw ere causing errors
+FROM python:3.9-slim
 
-WORKDIR /app  # create/set the "app" working dir in the container
+WORKDIR /app 
 
 # Install system dependencies during image build
 # relied on copilot for guidance with this chunk of code
@@ -10,14 +11,14 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .  # copy in the requirements into the container
-RUN pip install --no-cache-dir -r requirements.txt  # use pip to install packages listed in the file
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .  # copies from VM dir to the container
+COPY . . 
 
-ENV FLASK_APP=app.py  # tells Flask to use the app.py file I created
-ENV PYTHONUNBUFFERED=1  # avoids buffering output files...recommendation discovered
+ENV FLASK_APP=app.py 
+ENV PYTHONUNBUFFERED=1
 
-EXPOSE 5000  # port Flask runs on
+EXPOSE 5000 
 
-CMD ["python", "app.py"]  # command run when the containers starts to start app.py
+CMD ["python", "app.py"] 
