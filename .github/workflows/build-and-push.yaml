@@ -1,3 +1,4 @@
+# attempt to resolve syntax err
 name: Build and Push to GHCR
 
 on:
