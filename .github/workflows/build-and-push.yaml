@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/jryantiermore/bd-arch-ca3:latest
+          tags: ghcr.io/jryantiermore/face-api:latest
