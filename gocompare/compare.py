@@ -3,8 +3,8 @@ import requests
 import json
 from datetime import datetime
 
-BLUE_URL = "http://localhost:5001/predict"
-GREEN_URL = "http://localhost:5002/predict"
+BLUE_URL = "http://localhost:5000/predict-blue"
+GREEN_URL = "http://localhost:5000/predict-green"
 
 TEST_IMAGES = [
     "man1.jpg",

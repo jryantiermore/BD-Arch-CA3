@@ -17,7 +17,16 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: ghcr.io/jryantiermore/face-api:latest
+          image: ghcr.io/jryantiermore/bd-arch-ca3:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          volumeMounts:
+            - name: models-volume
+              mountPath: /models
+      volumes:
+        - name: models-volume
+          emptyDir: {}
