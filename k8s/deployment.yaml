@@ -6,6 +6,8 @@ metadata:
   namespace: flask-faceapp
   labels:
     app: flask-api
+  annotations:
+    redeploy: "2026-05-19-1039"
 spec:
   replicas: 1
   selector:
