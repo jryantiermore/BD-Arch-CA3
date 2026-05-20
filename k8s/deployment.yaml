@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: ghcr.io/jryantiermore/bd-arch-ca3:latest
+          image: ghcr.io/jryantiermore/bd-arch-ca3:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 5000

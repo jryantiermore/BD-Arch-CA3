@@ -1,3 +1,4 @@
+# latest ver of Dockerfile strengthened for folder hierarchy flexibility
 FROM python:3.9-slim
 
 WORKDIR /app
