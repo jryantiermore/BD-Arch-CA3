@@ -25,4 +25,4 @@ jobs:
       run: python -c "import cv2; print('OpenCV OK')"
 
     - name: Build Docker image
-      run: docker build -t mlops-pipeline .
+      run: docker build --no-cache -t ci-test-image .
