@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 COPY inference/ inference/
 COPY ingestion/ ingestion/
+COPY gocompare/ gocompare/
 COPY models/ models/
 
 ENV FLASK_APP=app.py

@@ -11,8 +11,8 @@ PIXELS_PER_CELL = int(os.getenv("PIXELS_PER_CELL", 8))
 CELLS_PER_BLOCK = int(os.getenv("CELLS_PER_BLOCK", 2))
 
 class FaceClassifier:
-    def __init__(self):
-        self.model = joblib.load(MODEL_PATH)
+    def __init__(self, model_path):
+        self.model = joblib.load(model_path)
 
     def extract_features(self, image_path):
         # Load and preprocess exactly like training
