@@ -1,4 +1,3 @@
-# attempt to resolve syntax err
 name: Build and Push to GHCR
 
 on:
@@ -13,6 +12,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: List build context
+        run: |
+          echo "Listing repository root:"
+          ls -R .
 
       - name: Log in to GHCR
         uses: docker/login-action@v3
