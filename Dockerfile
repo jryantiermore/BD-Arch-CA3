@@ -17,7 +17,7 @@ COPY app.py .
 COPY inference/ inference/
 COPY ingestion/ ingestion/
 COPY gocompare/ gocompare/
-COPY models/ models/
+COPY models/ /models/
 
 ENV FLASK_APP=app.py
 ENV PYTHONUNBUFFERED=1
