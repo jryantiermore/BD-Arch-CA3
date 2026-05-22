@@ -31,6 +31,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          no-cache: true
           tags: |
             ghcr.io/jryantiermore/bd-arch-ca3:latest
             ghcr.io/jryantiermore/bd-arch-ca3:v1
