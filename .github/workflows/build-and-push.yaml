@@ -34,4 +34,4 @@ jobs:
           no-cache: true
           provenance: false
           tags: |
-            ghcr.io/jryantiermore/bd-arch-ca3:v2
+            ghcr.io/jryantiermore/bd-arch-ca3:v3-22052026
