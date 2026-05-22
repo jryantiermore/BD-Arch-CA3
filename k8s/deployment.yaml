@@ -20,6 +20,8 @@ spec:
       labels:
         app: flask-api
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: flask-api
           image: ghcr.io/jryantiermore/bd-arch-ca3:v1
